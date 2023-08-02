@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Credit</class>
+ <widget class="QMainWindow" name="Credit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>480</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>480</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CreditWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">padding:5px;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>500</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="type">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Payment type</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="duty">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Debt + interest</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_duty">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>300</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="interest">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Interest charges</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_interest">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>240</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_monthly">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>180</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="monthly">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Monthly payment</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="term">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Credit term</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_amount">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>1000</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_term">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rate">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Interest rate</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="amount">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Amount of credit</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_rate">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>280</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>280</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>1</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>0.5</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="annuity">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>360</y>
+      <width>80</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Annuity</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="diff">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>360</y>
+      <width>110</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Differentiated</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calculate">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>90</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculate</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
